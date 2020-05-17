@@ -119,7 +119,7 @@ module.exports = {
 
   // A list of paths to directories that Jest should use to search for files in
   roots: [
-    './__tests__',
+    './app/__tests__',
   ],
 
   // Allows you to use a custom runner instead of Jest's default test runner

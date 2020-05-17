@@ -5,7 +5,7 @@
   "license": "MIT",
   "description": "Sample project to show recruiters some of my skills on the backend",
   "scripts": {
-    "start": "nodemon --exec sucrase-node ./server.ts",
+    "start": "nodemon --exec sucrase-node ./app/server.ts",
     "test:watch": "NODE_ENV=test jest --watch --detectOpenHandles",
     "test": "jest  --detectOpenHandles",
     "lint": "eslint --ext .ts ."
