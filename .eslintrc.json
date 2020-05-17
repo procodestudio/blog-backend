@@ -29,7 +29,6 @@
     "plugins": [
         "@typescript-eslint"
     ],
-    
     "rules": {
         "import/extensions": "off"
     }
