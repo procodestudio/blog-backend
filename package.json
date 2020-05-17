@@ -6,7 +6,8 @@
   "description": "Sample project to show recruiters some of my skills on the backend",
   "scripts": {
     "start": "nodemon --exec sucrase-node ./src/index.ts",
-    "test": "NODE_ENV=test jest --watch",
+    "test:watch": "NODE_ENV=test jest --watch",
+    "test": "NODE_ENV=test jest",
     "lint": "eslint --ext .ts ."
   },
   "repository": {
