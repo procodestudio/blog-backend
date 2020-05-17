@@ -5,7 +5,9 @@
   "license": "MIT",
   "description": "Sample project to show recruiters some of my skills on the backend",
   "scripts": {
-    "test": "yarn test"
+    "start": "nodemon --exec sucrase-node ./src/index.ts",
+    "test": "NODE_ENV=test jest --watch",
+    "lint": "eslint --ext .ts ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,31 @@
   "bugs": {
     "url": "https://github.com/procodestudio/blog-backend/issues"
   },
-  "homepage": "https://github.com/procodestudio/blog-backend#readme"
+  "homepage": "https://github.com/procodestudio/blog-backend#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14",
+    "sucrase": "^3.14.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "nodemon": "2.0.4",
+    "typescript": "^3.9.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "CI=true yarn test"
+    }
+  }
 }
