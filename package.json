@@ -1,0 +1,19 @@
+{
+  "name": "sample-blog-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Sample project to show recruiters some of my skills on the backend",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/procodestudio/blog-backend.git"
+  },
+  "author": "Sergio Sampaio (Procode Studio)",
+  "bugs": {
+    "url": "https://github.com/procodestudio/blog-backend/issues"
+  },
+  "homepage": "https://github.com/procodestudio/blog-backend#readme"
+}
